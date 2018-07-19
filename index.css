@@ -1,0 +1,204 @@
+*{
+	margin: 0;
+	padding:0;
+}
+.box{
+	width: 100%;
+	height: 100%;
+	background:url(img/1.jpg) no-repeat;
+	background-size: cover;
+	/*background:rgba(0,0,0,.6);*/
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+/*	filter: blur(12px);*/
+}
+/*-------------遮罩------------*/
+.box1{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	z-index: 2;
+}
+/*------------------头部-------------------*/
+.up{
+	width: 100%;
+	position: absolute;
+	top: 2%;
+}
+.up p{
+	text-align: center;
+	color: white;
+}
+.up .p1{
+    font-size: 0.8rem;
+}
+.up .p2{
+	padding-top: 2%;
+	font-size: 0.6rem;
+}
+.p3 a{
+	display: inline-block;
+	text-decoration: none;
+	padding-top: 2%;
+	margin: 0 1%;
+	color: white;
+	font-size: 0.6rem;
+}
+/*---------------------中间圆圈内容-------------*/
+.main{
+
+	width: 100%;
+	position: absolute;
+	top: 25%;
+}
+
+.main>a{
+	display: block;
+	text-align: center;
+}
+.main img{
+	width:8rem;
+	height: 8rem;
+    /*padding: 0 25%;*/
+    border-radius: 50%;
+    border: 0.25rem solid #66666687;
+    margin: 0 auto;
+    transform-origin: center center;   
+}
+@keyframes turnMove{   /*怎么转*/
+    to{ 
+        transform: rotate(360deg);
+    }
+}
+
+/*----------------进度条-------------------------*/
+#progress-box{
+	width: 100%;
+	position: absolute;
+	top: 78%;
+}
+#progress-box .progress-bar{
+	width: 10rem;
+	height: 0.2rem;
+	background: gray;
+	border-radius: 1.5px;
+	position: absolute;
+	left: 13%;
+}
+#progress-box .progress-bar span{
+	display: inline-block;
+	width: 0.4rem;
+	height: 0.4rem;
+	border-radius: 50%;
+	/*border:px solid #666;*/
+	position: absolute;
+	left: -1%;
+	top: -3px;
+	background: white;
+}
+.progressTop{
+	width: 0rem;
+    height: 0.2rem;
+    background: #44CCCC;
+}
+.time1,.time2{
+	display: inline-block;
+	color: white;
+}
+.time1{
+	position: absolute;
+	left: 1%;
+	top: -7px;
+	font-size: 0.52rem;
+}
+.time2{
+	position: absolute;
+	left: 89%;
+	top: -7px;
+	font-size: 0.52rem;
+}
+/*----------------功能条----------------*/
+.gn{
+	width: 100%;
+    position: absolute;
+	top: 85%;
+}
+
+.gn ul{
+	list-style: none;
+}
+.gn li{
+	float: left;
+	width: 20%;
+	text-align: center;
+}
+
+.gn img{
+	width: 50px;
+	height: 50px;
+}
+
+/*------------播放列表----------------*/
+#list{
+	display: none;
+	width: 100%;
+	height: 100%;
+	background: rgba(32,31,31,1);
+	position: relative;
+}
+#list ul{
+	list-style: none;
+	padding-top:10%;
+}
+#list li{
+	margin-top: 5%;
+}
+.nr{
+	display: inline-block;
+	font-size: 18px;
+	color: rgba(180,180,180,0.5);
+}
+.nr span{
+	font-size: 16px
+}
+#list ul li span{
+	display: inline-block;
+}
+.bq{
+	display: inline-block;
+	width: 18%;
+	text-align: center;
+	vertical-align: middle;
+    float: right
+}
+.bq img{
+	width: 21px;
+}
+.p4{
+	position: absolute;
+    left: 35%;
+    top: 70%;
+	font-size: 16px;
+	color: rgba(180,180,180,0.5);
+}
+.close{
+	display: inline-block;
+	width: 10%;
+	height: 5%;
+	text-align: center;
+/*	background: black;*/
+	/*color: white;*/
+    position: absolute;
+    left: 45%;
+    top: 80%;
+    font-size: 16px;
+    color: rgba(180,180,180,0.5);
+}
+
+
+
+
+
+

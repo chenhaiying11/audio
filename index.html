@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- 设置视口宽度 设置视口宽度和设备宽度一致 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<title>播放器</title>
+	<script type="text/javascript" src="remSystemMi.js"></script>
+	<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+</head>
+<body>
+	<div class="box">
+	    <div class="box1">
+			<div class="up">
+			    <p class="p1">童话镇</p>
+			    <p class="p2">—陈一发儿  —</p>
+			    <p class="p3">
+				    <a href="#">标准</a>
+				    <a href="#">音效</a>
+			    </p>
+		    </div>
+		    <div class="main">
+		       <a href="#">
+	              <img src="img/1.jpg" alt="">
+		       </a>
+		    </div>
+		    <div id="progress-box">
+		    	<div class="progress-bar">
+		    		<div class="progressTop"></div>
+		    		<span class="myspan"></span>
+		    	</div>
+				<div class="time1">00:00</div>
+				<div class="time2">00:00</div>
+		    </div>
+			<div class="gn">
+                <ul>
+	                <li><img src="img/循环.png" alt=""></li>
+	                <li><img src="img/上一首.png" alt="" class="sys"></li>
+                    <li><img src="img/播放.png" alt="" class="bf"></li>
+                    <li><img src="img/下一首.png" alt="" class="next"></li>
+                    <li><img src="img/列表.png" alt="" class="lt"></li>
+                </ul>
+			</div>
+			<div id="list">
+		        <ul>
+		            <li>
+			            <p class="nr">
+			                童话镇
+			                <span>—陈一发儿</span>
+			            </p>
+			            <a class="bq">
+				            <span><img src="img/喜欢.png" alt=""></span>
+				            <span><img src="img/下载.png" alt=""></span>
+			            </a>
+		            </li>
+		            <li>
+			            <p class="nr">
+			                中意他
+			                <span>-梁咏琪</span>
+			            </p>
+			            <a  class="bq">
+				            <span><img src="img/喜欢.png" alt=""></span>
+				            <span><img src="img/下载.png" alt=""></span>
+			            </a>
+		            </li>
+		            <li>
+			            <p class="nr">
+			                勉为其难
+			                <span>-王冕</span>
+			            </p>
+			            <a  class="bq">
+				            <span><img src="img/喜欢.png" alt=""></span>
+				            <span><img src="img/下载.png" alt=""></span>
+			            </a>
+		            </li>
+		        </ul>
+		        <p class="p4">+添加歌曲到队列</p>
+		        <p class="close"><span>关闭</span></p>
+			</div>
+        </div>
+	</div>
+	<audio id="mp3" preload="metadata">
+		<source src="陈一发儿-童话镇.mp3">
+	</audio>	
+</body>
+<script type="text/javascript" src="index.js"></script>
+</html>
